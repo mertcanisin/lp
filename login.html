@@ -1,0 +1,52 @@
+<html>
+
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Yinka Enoch Adedokun">
+	<title>Login Page</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+<script>
+$("#email").focus(function(){
+    $("#emailLabel").addClass("show");
+    $(this).val('')
+}).blur(function(){
+    $("#emailLabel").removeClass("show");
+});
+
+$("#password").focus(function(){
+    $("#passwordLabel").addClass("show");
+    $(this).val('')
+}).blur(function(){
+    $("#passwordLabel").removeClass("show");
+});
+
+</script>
+</head>
+<body>
+
+<section class="container">
+  <div class="span-6">
+    <div class="login">
+      <h1>
+	  <img src="https://www.tim.com.tr/uploads/logo_tr.png" alt=""><br><br>Puanınızı kontrol etmek için giriş yapın
+	  </h1>
+      <div class="login-content">
+        <label id="emailLabel">E-POSTA ADRESİNİZİ GİRİNİZ!</label>
+        <input id="email"  placeholder="E-POSTA" / >
+        <label id="passwordLabel">ŞİFRENİZİ GİRİNİZ!</label>
+        <input type="password" id="password" placeholder="ŞİFRE" / ><br>
+        
+        <input type="submit" value="PUAN SORGULA">
+        
+      </div>
+    </div>
+  </div>
+  <div class="span-6">
+
+</section>
+
+</body>
+
+</html>
